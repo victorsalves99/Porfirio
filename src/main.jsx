@@ -8,6 +8,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 // importação de paginas
 import App from "./App.jsx";
 import Home from "./pages/Home/Home.jsx";
+import Portifolio from "./pages/Portifolio/Portifolio.jsx";
 
 const router = createBrowserRouter([
   {
@@ -18,6 +19,10 @@ const router = createBrowserRouter([
         path: "/",
         element: <Home />,
       },
+      {
+        path:"/portifolio",
+        element: <Portifolio />
+      }
     ],
   },
 ]);

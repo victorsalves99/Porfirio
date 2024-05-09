@@ -1,0 +1,38 @@
+.portifolio{
+    text-align: center;
+}
+.portifolio .title {
+    font-size: 3.4rem;
+    padding: 60px;
+}
+.portifolio .box_fillter {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    padding: 70px;
+}
+.portifolio .card_list {
+    width: 100%;
+    min-height: 80vh;
+    padding: 20px;
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+
+}
+.portifolio .box_fillter .box_fillter_selection {
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+}
+.portifolio .box_fillter .box_fillter_selection p {
+   font-weight: bold;
+   font-size: 1.3rem;
+}
+.portifolio .box_fillter .box_fillter_selection select {
+    font-size: 1.3rem;
+    padding: 10px 15px;
+    border-radius: 10px;
+ }
