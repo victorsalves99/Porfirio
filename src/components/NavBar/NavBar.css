@@ -1,0 +1,34 @@
+@import "../../index.css";
+.header {
+    height: 20%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #131313;
+    padding: 20px;
+
+}
+.header .img_logo {
+    width: 250px;
+}
+
+.header .navigation {
+    display: flex;
+    gap: 30px;
+    justify-content: start;
+}
+
+.header .navigation a {
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: #f3f3f3;
+    opacity: .6;
+    transition: .8s;
+}
+
+.header .navigation a:hover {
+    opacity: 1;
+    transition: .3s;
+
+}
