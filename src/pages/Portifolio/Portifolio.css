@@ -1,38 +1,59 @@
-.portifolio{
-    text-align: center;
+.portifolio {
+  text-align: center;
 }
 .portifolio .title {
-    font-size: 3.4rem;
-    padding: 60px;
+  font-size: 3.4rem;
+  padding: 60px;
+  padding-top: 100px;
+  color: #000;
 }
 .portifolio .box_fillter {
-    display: flex;
-    width: 100%;
-    justify-content: space-around;
-    padding: 70px;
+  display: flex;
+
+  justify-content: space-around;
 }
 .portifolio .card_list {
-    width: 100%;
-    min-height: 80vh;
-    padding: 20px;
-    margin-bottom: 100px;
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
-
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
 }
 .portifolio .box_fillter .box_fillter_selection {
-    display: flex;
-    gap: 15px;
-    flex-direction: column;
+  display: flex;
+  gap: 15px;
+  flex-direction: column;
 }
-.portifolio .box_fillter .box_fillter_selection p {
-   font-weight: bold;
-   font-size: 1.3rem;
+
+@media (max-width: 776px) {
+  .portifolio .box_fillter {
+    padding: 70px 30px;
+  }
+
 }
-.portifolio .box_fillter .box_fillter_selection select {
-    font-size: 1.3rem;
-    padding: 10px 15px;
-    border-radius: 10px;
- }
+
+@media (max-width: 732px) {
+  .portifolio .title {
+    font-size: 2.4rem;
+    padding: 100px 30px 20px 30px;
+
+  }
+}
+@media (max-width: 552px) {
+  .portifolio .title {
+    font-size: 1.6rem;
+    padding: 130px 30px 20px 30px;
+
+  }
+}
+@media (max-width: 406px) {
+  .portifolio .title {
+    padding: 140px 0 15px 0;
+  }
+}
+@media (max-width: 376px) {
+  .portifolio .box_fillter {
+    padding: 5px 10px;
+  }
+}

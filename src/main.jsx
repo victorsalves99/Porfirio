@@ -10,6 +10,7 @@ import App from "./App.jsx";
 import Home from "./pages/Home/Home.jsx";
 import Portifolio from "./pages/Portifolio/Portifolio.jsx";
 import Sobre from "./pages/Sobre/Sobre.jsx";
+import Perfil from "./pages/Perfil/Perfil.jsx";
 
 const router = createBrowserRouter([
   {
@@ -21,19 +22,23 @@ const router = createBrowserRouter([
         element: <Home />,
       },
       {
-        path:"/portifolio",
-        element: <Portifolio />
+        path: "/portifolio",
+        element: <Portifolio />,
       },
       {
-        path:"/sobre",
-        element: <Sobre />
-      }
+        path: "/sobre",
+        element: <Sobre />,
+      },
+      {
+        path: "/perfil/:id",
+        element: <Perfil />,
+      },
     ],
   },
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+      <RouterProvider router={router} />
   </React.StrictMode>
 );

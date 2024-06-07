@@ -8,7 +8,8 @@ const Home = () => {
         position={"center"}
         simpleContent={true}
         banner={"banner1"}
-        slogan={`Mais que caminhõs vendemos sonhos!`}
+        slogan={`Mais que caminhõs\n vendemos sonhos!`}
+        chave={true}
       />
       <Banner
         position={"end"}
@@ -16,11 +17,12 @@ const Home = () => {
         banner={"banner2"}
         title={"Baús com os melhores preços do mercado!"}
         description={
-          "Oferecemos os caminhões  mais confiáveis do mercado por mais de 25 anos. Com uma história sólida e compromisso com a excelência, nossos produtos são a escolha preferida para quem busca qualidade e eficiência"
+          "Oferecemos os caminhões  mais confiáveis do mercado por mais de 25 anos.\n Com uma história sólida e compromisso com a excelência, nossos produtos são a escolha preferida para quem busca qualidade e eficiência"
         }
         btn={"Nossa Frota"}
         btnPosition={"btnEnd"}
         caminho={"/portifolio"}
+        chave={true}
       />
 
       <Banner
@@ -28,10 +30,8 @@ const Home = () => {
         simpleContent={false}
         banner={"banner3"}
         title={"Baús com os melhores preços do mercado!"}
-        description={`Nossa trajetória de 25 anos é marcada por um compromisso inabalável com a excelência e a confiança dos nossos clientes.
-        Como líderes no mercado de caminhões, conquistamos a fidelidade de inúmeras empresas graças à qualidade superior dos nossos produtos e ao suporte excepcional que oferecemos.
-        A cada entrega, reforçamos nossa reputação como o parceiro de confiança para quem busca durabilidade, desempenho e satisfação garantida. 
-        Junte-se a nós e experimente a tranquilidade de saber que está fazendo negócios com os melhores há mais de duas décadas.`}
+        description={`Nossa trajetória de 25 anos é marcada por um compromisso inabalável com a excelência e a confiança dos nossos clientes.\n
+        Como líderes no mercado de caminhões, conquistamos a fidelidade de inúmeras empresas graças à qualidade superior dos nossos produtos e ao suporte excepcional que oferecemos.\n`}
         btn={"Nossos Vendedores"}
         btnPosition={"btnStart"}
         caminho={"/portifolio"}

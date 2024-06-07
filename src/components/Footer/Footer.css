@@ -1,28 +1,10 @@
 .footer {
-    width: 100%;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     background-color: #000;
-    color: #fff;
-    text-align: center;
-    padding: 70px 0;
-}
-.footer .contatos {
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
-
-}
-.footer .contatos .footer_contatos {
-    font-size: 2rem;
+    height: 200px;
+    width: 100%;
 }
 
-.footer .contatos .grid_contados {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
 
-.footer .contatos .grid_contados .footer_title {
-    font-weight: bold;
-}
+

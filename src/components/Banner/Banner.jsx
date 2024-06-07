@@ -1,6 +1,6 @@
 import "./Banner.css";
 import { Link } from "react-router-dom";
-import seta from "../../assets/img/seta.svg";
+import seta from "../../assets/img/seta.png";
 
 const Banner = ({
   position,
@@ -12,13 +12,14 @@ const Banner = ({
   btn = "",
   caminho = "",
   btnPosition,
+  chave = false
 }) => {
   return (
-    <>
+    <div className="bannner_main">
       {simpleContent ? (
         <div className={`banner ${position} ${banner}`}>
           <p className="slogan">{slogan}</p>
-          <img src={seta} alt="seta de indicação " className="seta" />
+          {chave && <img src={seta} alt="seta de indicação " className="seta" />}
         </div>
       ) : (
         <div className={`banner ${position} ${banner}`}>
@@ -28,12 +29,11 @@ const Banner = ({
             <Link to={caminho} className={`btn ${btnPosition}`}>
               {btn}
             </Link>
-            <img src={seta} alt="seta de indicação " className="seta" />
+            {chave && <img src={seta} alt="seta de indicação " className="seta" />}
           </div>
         </div>
-      )
-     }
-    </>
+      )}
+    </div>
   );
 };
 

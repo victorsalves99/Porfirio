@@ -1,21 +1,22 @@
-import "./Card.css"
-import { Link } from "react-router-dom"
+import "./Card.css";
+import { Link } from "react-router-dom";
 
-const Card = ({id,url,name,price}) => {
+const Card = ({ id, url, name, price }) => {
   return (
     <>
-        <Link to={`/perfil/${id}`} className="card">
-            <img src={url} alt="" className="card_img"/>
-            <p className="card_name">
-                {name}
-            </p>
-            <p className="card_price">
-                R${price}
-            </p>
-        </Link>
+      <Link className="card" to={`/perfil/${id}`}>
+        <img src={url} className="card-img-top" alt="..." />
+        <div className="card-body">
+          <h5 className="card-title">{name}</h5>
+          <br />
+          <br />
+          <p className="btn btn-primary">
+            R$ {price}
+          </p>
+        </div>
+      </Link>
     </>
-    
-  )
-}
+  );
+};
 
-export default Card
+export default Card;
