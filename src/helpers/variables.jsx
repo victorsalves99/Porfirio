@@ -49,4 +49,4 @@ export const filtro = [
     }
 ]
 
-export const url = "3.95.215.131:3000/"
+export const url = "http://3.95.215.131:3000/"

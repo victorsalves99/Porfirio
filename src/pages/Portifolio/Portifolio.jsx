@@ -14,10 +14,15 @@ const Portifolio = () => {
   async function getTrucks() {
     const res = await axios
       .get(`${url}caminhao`)
-      .then((data) => data.data)
+      .then((data) => {
+        console.log(data)
+        setTrucks(data.data)
+        setTruksList(data.data)
+        console.log(trucks)
+        console.log(truksList)
+       return data.data
+      })
       .catch((err) => console.log(err));
-    setTrucks(res);
-    setTruksList(res);
   }
   function filtrarCaminhoesPorMarca(valor) {
     if (valor == "all") {
